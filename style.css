@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    border: 2px solid black;
+}
+
+#color1 {
+    width: 50%;
+    height: 100vh;
+    background-color: blue;
+    /* border: 5px solid black; */
+}
+
+#color2 {
+    width: 50%;
+    height: 100vh;
+    background-color: red;
+}
+
+.btn {
+    margin-top: 45%;
+    margin-left: 40%;
+    width: 8rem;
+    height: 4rem;
+    background-color: black;
+    border-radius: 8px;
+    color: white;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    font-size: 1.44rem;
+}
+
+.btn:hover {
+    background-color: rgb(187, 144, 144);
+}
+
+h1 {
+    font-family: "Pacifico", cursive;
+    font-size: 5rem;
+    width: auto;
+    height: auto;
+    position: absolute;
+    margin-top: 10rem;
+    margin-left: 27rem;
+    color: white;
+}
+
+
+
+
+@media only screen and (max-width: 520px) {
+    #container {
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    #color1 {
+        width: 100%;
+        height: 50vh;
+    }
+
+    #color2 {
+        width: 100%;
+        height: 50vh;
+    }
+
+    h1 {
+        font-size: 2rem;
+        width: 100%;
+        height: auto;
+        margin-top: 50%;
+        margin-left: 0;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .btn {
+        margin-top: 25%;
+        margin-left: 35%;
+        width: 6rem;
+        height: 2rem;
+        border-radius: 5px;
+    }
+
+    .btn a {
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (min-width: 521px) {
+    #container {
+        width: 100%;
+        height: 100vh;
+    }
+
+    h1 {
+        width: 100%;
+        height: auto;
+        font-size: 2.44rem;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 10%;
+    }
+}
+@media only screen and (min-width: 2560px){
+    h1{
+        font-size: 5rem;
+    }
+    .btn {
+      
+        width: 13rem;
+        height: 7rem;
+        border-radius: 8px;
+    }
+
+    .btn a {
+        text-decoration: none;
+        font-weight: 900;
+        font-size: 2rem;
+    }
+}
